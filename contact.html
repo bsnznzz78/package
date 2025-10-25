@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact RBC Counselling - Book consultation, visit our offices, or reach out via phone, email, or WhatsApp">
+    <title>Contact Us - RBC Counselling Consultancy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>RBC Counselling</h1>
+                    <p class="tagline">Your Future, Our Priority</p>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="colleges.html">Colleges</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We're here to help you succeed - reach out anytime</p>
+        </div>
+    </section>
+
+    <!-- Quick Contact Options -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="method-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our counsellors</p>
+                    <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+                    <p class="availability">Mon-Sat: 9:00 AM - 7:00 PM</p>
+                </div>
+                <div class="contact-method">
+                    <div class="method-icon">💬</div>
+                    <h3>WhatsApp</h3>
+                    <p>Quick responses to your queries</p>
+                    <a href="https://wa.me/919876543210" class="contact-link" target="_blank">Chat on WhatsApp</a>
+                    <p class="availability">Available 24/7</p>
+                </div>
+                <div class="contact-method">
+                    <div class="method-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Detailed inquiries and documents</p>
+                    <a href="mailto:info@rbccounselling.com" class="contact-link">info@rbccounselling.com</a>
+                    <p class="availability">Response within 24 hours</p>
+                </div>
+                <div class="contact-method">
+                    <div class="method-icon">📍</div>
+                    <h3>Visit Office</h3>
+                    <p>Walk-in consultations welcome</p>
+                    <a href="#locations" class="contact-link">View Locations</a>
+                    <p class="availability">By appointment preferred</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Scheduling -->
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Schedule a Free Consultation</h2>
+                <p>Book a 30-minute session with our expert counsellors</p>
+            </div>
+            <div class="appointment-container">
+                <div class="appointment-form-wrapper">
+                    <form id="appointment-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appt-name">Full Name *</label>
+                                <input type="text" id="appt-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-phone">Phone Number *</label>
+                                <input type="tel" id="appt-phone" name="phone" required pattern="[0-9]{10}">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appt-email">Email Address *</label>
+                                <input type="email" id="appt-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-exam">Exam Type *</label>
+                                <select id="appt-exam" name="exam" required>
+                                    <option value="">Select Exam</option>
+                                    <option value="neet-ug">NEET UG</option>
+                                    <option value="neet-pg">NEET PG</option>
+                                    <option value="jee-main">JEE Main</option>
+                                    <option value="jee-advanced">JEE Advanced</option>
+                                    <option value="kcet">Karnataka CET</option>
+                                    <option value="mht-cet">Maharashtra CET</option>
+                                    <option value="uptu">UP Entrance</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appt-rank">Your Rank (if declared)</label>
+                                <input type="text" id="appt-rank" name="rank">
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-state">Preferred State *</label>
+                                <select id="appt-state" name="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="karnataka">Karnataka</option>
+                                    <option value="maharashtra">Maharashtra</option>
+                                    <option value="up">Uttar Pradesh</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="appt-date">Preferred Date *</label>
+                                <input type="date" id="appt-date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="appt-time">Preferred Time *</label>
+                                <select id="appt-time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                    <option value="18:00">06:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="appt-mode">Consultation Mode *</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="mode" value="video" required>
+                                    <span>Video Call</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="mode" value="phone" required>
+                                    <span>Phone Call</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="mode" value="in-person" required>
+                                    <span>In-Person (Bangalore)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="appt-message">Additional Information</label>
+                            <textarea id="appt-message" name="message" rows="4" placeholder="Any specific questions or concerns you'd like to discuss..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Book Appointment</button>
+                        <p class="form-note">* We'll confirm your appointment via phone within 2 hours</p>
+                    </form>
+                </div>
+                <div class="appointment-info">
+                    <h3>What to Expect</h3>
+                    <div class="info-item">
+                        <span class="info-icon">✓</span>
+                        <div>
+                            <h4>Free 30-Minute Session</h4>
+                            <p>No obligations, completely free consultation to understand your needs</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✓</span>
+                        <div>
+                            <h4>Expert Counsellor</h4>
+                            <p>Connect with experienced counsellors specializing in your exam type</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✓</span>
+                        <div>
+                            <h4>Personalized Analysis</h4>
+                            <p>Preliminary college prediction based on your rank and preferences</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✓</span>
+                        <div>
+                            <h4>No Pressure</h4>
+                            <p>Understanding of process and packages - decide at your own pace</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Contact Form -->
+    <section class="general-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Send Us a Message</h2>
+                <p>Have a question? We're here to help</p>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name *</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number *</label>
+                            <input type="tel" id="contact-phone" name="phone" required pattern="[0-9]{10}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email Address *</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject *</label>
+                        <select id="contact-subject" name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="service-inquiry">Service Inquiry</option>
+                            <option value="package-pricing">Package & Pricing</option>
+                            <option value="college-info">College Information</option>
+                            <option value="documentation">Documentation Help</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message *</label>
+                        <textarea id="contact-message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span>Subscribe to our newsletter for counselling updates and tips</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section id="locations" class="office-locations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Offices</h2>
+                <p>Visit us for in-person consultations</p>
+            </div>
+            <div class="locations-grid">
+                <div class="location-card">
+                    <h3>📍 Bangalore Office (Headquarters)</h3>
+                    <p class="address">
+                        #45, 2nd Floor, MG Road<br>
+                        Near Trinity Metro Station<br>
+                        Bangalore, Karnataka - 560001
+                    </p>
+                    <div class="location-details">
+                        <p><strong>Phone:</strong> +91 98765 43210</p>
+                        <p><strong>Email:</strong> bangalore@rbccounselling.com</p>
+                        <p><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+                <div class="location-card">
+                    <h3>📍 Mumbai Office</h3>
+                    <p class="address">
+                        201, Business Hub<br>
+                        Andheri West<br>
+                        Mumbai, Maharashtra - 400053
+                    </p>
+                    <div class="location-details">
+                        <p><strong>Phone:</strong> +91 98765 43211</p>
+                        <p><strong>Email:</strong> mumbai@rbccounselling.com</p>
+                        <p><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+                <div class="location-card">
+                    <h3>📍 Lucknow Office</h3>
+                    <p class="address">
+                        3rd Floor, Gomti Nagar<br>
+                        Near Phoenix Mall<br>
+                        Lucknow, Uttar Pradesh - 226010
+                    </p>
+                    <div class="location-details">
+                        <p><strong>Phone:</strong> +91 98765 43212</p>
+                        <p><strong>Email:</strong> lucknow@rbccounselling.com</p>
+                        <p><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-outline btn-sm">Get Directions</a>
+                </div>
+            </div>
+            
+            <!-- Interactive Map -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-icon">🗺️</div>
+                    <h3>Interactive Map</h3>
+                    <p>Our offices are conveniently located in major cities for easy access</p>
+                    <div class="map-buttons">
+                        <button class="btn btn-outline" onclick="alert('Map integration: This would open an interactive map showing all office locations')">View All Locations</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded FAQ Section -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find quick answers to common questions</p>
+            </div>
+            <div class="faq-categories">
+                <button class="faq-category active" data-category="general">General</button>
+                <button class="faq-category" data-category="services">Services</button>
+                <button class="faq-category" data-category="payment">Payment</button>
+                <button class="faq-category" data-category="process">Process</button>
+            </div>
+            <div class="faq-content">
+                <!-- General FAQs -->
+                <div class="faq-category-section active" data-category="general">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I get started with RBC Counselling?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply book a free consultation through our website or call us directly. We'll assess your situation, discuss your options, and recommend the best service package for your needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is the initial consultation really free?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! The first 30-minute consultation is completely free with no obligations. It's our way of helping you understand the counselling process and how we can assist you.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you provide services across all states in India?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We specialize in Karnataka, Maharashtra, and Uttar Pradesh state counselling. For other states and All India counselling (AIQ, JoSAA), we provide services nationwide.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I visit your office without an appointment?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Walk-ins are welcome, but we recommend booking an appointment to ensure a counsellor is available and can dedicate quality time to your consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How quickly do you respond to inquiries?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Phone and WhatsApp queries are typically answered within minutes during business hours. Email inquiries receive responses within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services FAQs -->
+                <div class="faq-category-section" data-category="services">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Which service package should I choose?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>It depends on your needs. The Basic package suits informed students needing minimal guidance. Complete package is most popular, offering comprehensive support. Premium provides white-glove service with dedicated counsellor. We'll help you choose during consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do you help with both NEET and JEE?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide expert counselling for both NEET (medical) and JEE (engineering) at UG and PG levels. Each package covers one exam; combo rates available for multiple exams.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can you help with management quota admissions?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. We have strong relationships with private colleges and can facilitate management quota admissions with complete fee transparency and no hidden charges.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What documents do I need to provide?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Typically: admit card, scorecard/rank letter, 10th & 12th certificates, ID proof, domicile certificate (for state quota), category certificate (if applicable), and passport photos. We'll provide a detailed checklist.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment FAQs -->
+                <div class="faq-category-section" data-category="payment">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What payment methods do you accept?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We accept all major payment methods: bank transfer, UPI, credit/debit cards, cheques, and cash. Payment plans available for premium packages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>When do I need to pay for services?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Payment is required after the free consultation when you decide to enroll in a package. We provide a detailed service agreement before any payment.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is there a refund policy?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If you haven't used any services beyond initial consultation, 80% refund is available within 7 days. After services begin, refunds are prorated based on services utilized.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Are there any hidden charges?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely not. Our pricing is completely transparent. The package fee is all-inclusive with no hidden charges. Any additional services (like extra exam counselling) are discussed upfront.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process FAQs -->
+                <div class="faq-category-section" data-category="process">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>When should I start the counselling process?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ideally, immediately after results are declared. However, we can assist at any stage. Early preparation allows more time for strategy development and document preparation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long does the entire process take?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>From counselling registration to final admission typically takes 1-3 months depending on the exam and number of counselling rounds. We're with you throughout this period.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Do I need to visit your office multiple times?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Not necessarily. Most counselling can be done online via video calls. In-person visits are optional and mainly for document submission or those who prefer face-to-face interaction.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What happens after I get seat allotment?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We guide you through reporting, document submission at the college, fee payment, and admission formalities. Premium package includes physical accompaniment to reporting center.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What if I don't get a seat in the first round?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We continue supporting you through all counselling rounds. Our service includes strategy adjustment for subsequent rounds and exploring alternative options like management quota.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Our counselling experts are ready to help you</p>
+            <div class="cta-buttons">
+                <a href="tel:+919876543210" class="btn btn-primary btn-large">Call Now</a>
+                <a href="https://wa.me/919876543210" class="btn btn-secondary btn-large" target="_blank">WhatsApp Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>RBC Counselling</h3>
+                    <p>Your trusted partner for medical and engineering college admissions. We guide you to success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="colleges.html">Colleges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#neet">NEET Counselling</a></li>
+                        <li><a href="services.html#jee">JEE Counselling</a></li>
+                        <li><a href="services.html#state">State Quota</a></li>
+                        <li><a href="services.html#management">Management Quota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📞 +91 98765 43210</li>
+                        <li>📧 info@rbccounselling.com</li>
+                        <li>📍 Bangalore, Karnataka</li>
+                        <li>🕐 Mon-Sat: 9:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RBC Counselling Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

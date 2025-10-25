@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore medical and engineering colleges across Karnataka, Maharashtra, and UP with detailed profiles">
+    <title>College Directory - RBC Counselling Consultancy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>RBC Counselling</h1>
+                    <p class="tagline">Your Future, Our Priority</p>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="colleges.html" class="active">Colleges</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>College Directory</h1>
+            <p>Explore 500+ medical and engineering colleges across India</p>
+        </div>
+    </section>
+
+    <!-- College Filter -->
+    <section class="college-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="state-filter">State:</label>
+                    <select id="state-filter">
+                        <option value="all">All States</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="maharashtra">Maharashtra</option>
+                        <option value="up">Uttar Pradesh</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Type:</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="medical">Medical</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="ownership-filter">Ownership:</label>
+                    <select id="ownership-filter">
+                        <option value="all">All</option>
+                        <option value="government">Government</option>
+                        <option value="private">Private</option>
+                        <option value="deemed">Deemed University</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="search-filter">Search:</label>
+                    <input type="text" id="search-filter" placeholder="College name...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Colleges -->
+    <section class="featured-colleges">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Colleges</h2>
+                <p>Top-rated institutions with excellent track records</p>
+            </div>
+            <div class="featured-grid">
+                <div class="college-featured-card" data-state="karnataka" data-type="medical">
+                    <div class="college-badge">Government</div>
+                    <div class="college-image-placeholder">🏛️</div>
+                    <h3>Bangalore Medical College</h3>
+                    <p class="college-location">📍 Bangalore, Karnataka</p>
+                    <div class="college-stats">
+                        <span>⭐ 4.8/5</span>
+                        <span>👥 150 Seats</span>
+                        <span>🎓 MBBS</span>
+                    </div>
+                    <p class="college-desc">Premier government medical college established in 1955. Known for excellent clinical exposure and research facilities.</p>
+                    <div class="college-highlights">
+                        <span class="tag">NMC Approved</span>
+                        <span class="tag">Top Placements</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline view-details" data-college="bmc">View Details</button>
+                </div>
+
+                <div class="college-featured-card" data-state="maharashtra" data-type="medical">
+                    <div class="college-badge">Government</div>
+                    <div class="college-image-placeholder">🏛️</div>
+                    <h3>Grant Medical College</h3>
+                    <p class="college-location">📍 Mumbai, Maharashtra</p>
+                    <div class="college-stats">
+                        <span>⭐ 4.7/5</span>
+                        <span>👥 250 Seats</span>
+                        <span>🎓 MBBS, MD/MS</span>
+                    </div>
+                    <p class="college-desc">Oldest medical college in Maharashtra with state-of-the-art facilities and renowned faculty.</p>
+                    <div class="college-highlights">
+                        <span class="tag">NMC Approved</span>
+                        <span class="tag">Research Excellence</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline view-details" data-college="gmc">View Details</button>
+                </div>
+
+                <div class="college-featured-card" data-state="karnataka" data-type="engineering">
+                    <div class="college-badge">Government</div>
+                    <div class="college-image-placeholder">⚙️</div>
+                    <h3>BMS College of Engineering</h3>
+                    <p class="college-location">📍 Bangalore, Karnataka</p>
+                    <div class="college-stats">
+                        <span>⭐ 4.6/5</span>
+                        <span>👥 1000+ Seats</span>
+                        <span>🎓 B.Tech, M.Tech</span>
+                    </div>
+                    <p class="college-desc">Autonomous institution with excellent placement record and industry connections.</p>
+                    <div class="college-highlights">
+                        <span class="tag">AICTE Approved</span>
+                        <span class="tag">95% Placements</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline view-details" data-college="bmsce">View Details</button>
+                </div>
+
+                <div class="college-featured-card" data-state="up" data-type="medical">
+                    <div class="college-badge">Government</div>
+                    <div class="college-image-placeholder">🏛️</div>
+                    <h3>King George's Medical University</h3>
+                    <p class="college-location">📍 Lucknow, Uttar Pradesh</p>
+                    <div class="college-stats">
+                        <span>⭐ 4.7/5</span>
+                        <span>👥 200 Seats</span>
+                        <span>🎓 MBBS, MD/MS</span>
+                    </div>
+                    <p class="college-desc">Leading medical university in North India with comprehensive super-specialty departments.</p>
+                    <div class="college-highlights">
+                        <span class="tag">NMC Approved</span>
+                        <span class="tag">Super Specialty</span>
+                    </div>
+                    <button class="btn btn-sm btn-outline view-details" data-college="kgmu">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- State-wise Listings -->
+    <section class="state-listings">
+        <div class="container">
+            <div class="section-header">
+                <h2>State-wise College Listings</h2>
+            </div>
+
+            <!-- Karnataka Colleges -->
+            <div class="state-section" data-state="karnataka">
+                <h3 class="state-title">🌴 Karnataka Colleges</h3>
+                
+                <h4 class="category-title">Medical Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Bangalore Medical College and Research Institute</h4>
+                            <p>📍 Bangalore | 🏛️ Government | 👥 150 Seats | ⭐ 4.8/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="bmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Mysore Medical College</h4>
+                            <p>📍 Mysore | 🏛️ Government | 👥 200 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="mmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Karnataka Institute of Medical Sciences</h4>
+                            <p>📍 Hubli | 🏛️ Government | 👥 150 Seats | ⭐ 4.5/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="kims">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="private">
+                        <div class="college-info">
+                            <h4>Kasturba Medical College, Manipal</h4>
+                            <p>📍 Manipal | 🏢 Private | 👥 250 Seats | ⭐ 4.7/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="kmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="private">
+                        <div class="college-info">
+                            <h4>St. John's Medical College</h4>
+                            <p>📍 Bangalore | 🏢 Private | 👥 150 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="sjmc">Details</button>
+                    </div>
+                </div>
+
+                <h4 class="category-title">Engineering Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>BMS College of Engineering</h4>
+                            <p>📍 Bangalore | 🏛️ Government | 👥 1080 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="bmsce">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>RV College of Engineering</h4>
+                            <p>📍 Bangalore | 🏛️ Autonomous | 👥 1200 Seats | ⭐ 4.5/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="rvce">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>National Institute of Technology Karnataka</h4>
+                            <p>📍 Surathkal | 🏛️ Central Government | 👥 800 Seats | ⭐ 4.7/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="nitk">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="private">
+                        <div class="college-info">
+                            <h4>PES University</h4>
+                            <p>📍 Bangalore | 🏢 Private | 👥 1500 Seats | ⭐ 4.4/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="pes">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maharashtra Colleges -->
+            <div class="state-section" data-state="maharashtra">
+                <h3 class="state-title">🏔️ Maharashtra Colleges</h3>
+                
+                <h4 class="category-title">Medical Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Grant Government Medical College</h4>
+                            <p>📍 Mumbai | 🏛️ Government | 👥 250 Seats | ⭐ 4.7/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="gmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>B.J. Government Medical College</h4>
+                            <p>📍 Pune | 🏛️ Government | 👥 200 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="bjmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Seth G.S. Medical College</h4>
+                            <p>📍 Mumbai | 🏛️ Government | 👥 250 Seats | ⭐ 4.7/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="sgsmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="private">
+                        <div class="college-info">
+                            <h4>D.Y. Patil Medical College</h4>
+                            <p>📍 Pune | 🏢 Private | 👥 150 Seats | ⭐ 4.3/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="dyp">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="private">
+                        <div class="college-info">
+                            <h4>Bharati Vidyapeeth Medical College</h4>
+                            <p>📍 Pune | 🏢 Deemed | 👥 200 Seats | ⭐ 4.4/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="bvmc">Details</button>
+                    </div>
+                </div>
+
+                <h4 class="category-title">Engineering Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>College of Engineering Pune (COEP)</h4>
+                            <p>📍 Pune | 🏛️ Government | 👥 1000 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="coep">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Victoria Jubilee Technical Institute (VJTI)</h4>
+                            <p>📍 Mumbai | 🏛️ Government | 👥 900 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="vjti">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Veermata Jijabai Technological Institute</h4>
+                            <p>📍 Mumbai | 🏛️ Autonomous | 👥 800 Seats | ⭐ 4.5/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="vjit">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="private">
+                        <div class="college-info">
+                            <h4>Pune Institute of Computer Technology</h4>
+                            <p>📍 Pune | 🏢 Private | 👥 600 Seats | ⭐ 4.4/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="pict">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uttar Pradesh Colleges -->
+            <div class="state-section" data-state="up">
+                <h3 class="state-title">🕌 Uttar Pradesh Colleges</h3>
+                
+                <h4 class="category-title">Medical Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>King George's Medical University</h4>
+                            <p>📍 Lucknow | 🏛️ Government | 👥 200 Seats | ⭐ 4.7/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="kgmu">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Institute of Medical Sciences, BHU</h4>
+                            <p>📍 Varanasi | 🏛️ Central University | 👥 150 Seats | ⭐ 4.6/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="bhu">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Moti Lal Nehru Medical College</h4>
+                            <p>📍 Allahabad | 🏛️ Government | 👥 150 Seats | ⭐ 4.4/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="mlnmc">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="medical" data-ownership="private">
+                        <div class="college-info">
+                            <h4>Sharda University Medical College</h4>
+                            <p>📍 Greater Noida | 🏢 Private | 👥 150 Seats | ⭐ 4.2/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="sharda">Details</button>
+                    </div>
+                </div>
+
+                <h4 class="category-title">Engineering Colleges</h4>
+                <div class="college-list">
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Indian Institute of Technology Kanpur</h4>
+                            <p>📍 Kanpur | 🏛️ Central Government | 👥 500 Seats | ⭐ 4.8/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="iitk">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Motilal Nehru National Institute of Technology</h4>
+                            <p>📍 Allahabad | 🏛️ Central Government | 👥 700 Seats | ⭐ 4.5/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="mnnit">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="government">
+                        <div class="college-info">
+                            <h4>Harcourt Butler Technical University</h4>
+                            <p>📍 Kanpur | 🏛️ Government | 👥 800 Seats | ⭐ 4.3/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="hbtu">Details</button>
+                    </div>
+                    <div class="college-list-item" data-type="engineering" data-ownership="private">
+                        <div class="college-info">
+                            <h4>Amity University</h4>
+                            <p>📍 Noida | 🏢 Private | 👥 2000 Seats | ⭐ 4.2/5</p>
+                        </div>
+                        <button class="btn btn-sm btn-outline view-details" data-college="amity">Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Tool -->
+    <section class="comparison-tool">
+        <div class="container">
+            <div class="section-header">
+                <h2>College Comparison Tool</h2>
+                <p>Compare up to 3 colleges side by side</p>
+            </div>
+            <div class="comparison-interface">
+                <div class="comparison-selectors">
+                    <div class="selector-group">
+                        <label for="compare-college-1">College 1:</label>
+                        <select id="compare-college-1" class="compare-select">
+                            <option value="">Select a college</option>
+                            <option value="bmc">Bangalore Medical College</option>
+                            <option value="gmc">Grant Medical College</option>
+                            <option value="kgmu">King George's Medical University</option>
+                            <option value="bmsce">BMS College of Engineering</option>
+                            <option value="coep">COEP Pune</option>
+                            <option value="iitk">IIT Kanpur</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label for="compare-college-2">College 2:</label>
+                        <select id="compare-college-2" class="compare-select">
+                            <option value="">Select a college</option>
+                            <option value="bmc">Bangalore Medical College</option>
+                            <option value="gmc">Grant Medical College</option>
+                            <option value="kgmu">King George's Medical University</option>
+                            <option value="bmsce">BMS College of Engineering</option>
+                            <option value="coep">COEP Pune</option>
+                            <option value="iitk">IIT Kanpur</option>
+                        </select>
+                    </div>
+                    <div class="selector-group">
+                        <label for="compare-college-3">College 3:</label>
+                        <select id="compare-college-3" class="compare-select">
+                            <option value="">Select a college</option>
+                            <option value="bmc">Bangalore Medical College</option>
+                            <option value="gmc">Grant Medical College</option>
+                            <option value="kgmu">King George's Medical University</option>
+                            <option value="bmsce">BMS College of Engineering</option>
+                            <option value="coep">COEP Pune</option>
+                            <option value="iitk">IIT Kanpur</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="compare-btn" class="btn btn-primary">Compare Colleges</button>
+                
+                <div id="comparison-results" class="comparison-results" style="display: none;">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Parameter</th>
+                                <th id="college1-name">College 1</th>
+                                <th id="college2-name">College 2</th>
+                                <th id="college3-name">College 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Location</strong></td>
+                                <td id="college1-location">-</td>
+                                <td id="college2-location">-</td>
+                                <td id="college3-location">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Type</strong></td>
+                                <td id="college1-type">-</td>
+                                <td id="college2-type">-</td>
+                                <td id="college3-type">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Total Seats</strong></td>
+                                <td id="college1-seats">-</td>
+                                <td id="college2-seats">-</td>
+                                <td id="college3-seats">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rating</strong></td>
+                                <td id="college1-rating">-</td>
+                                <td id="college2-rating">-</td>
+                                <td id="college3-rating">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Annual Fee</strong></td>
+                                <td id="college1-fee">-</td>
+                                <td id="college2-fee">-</td>
+                                <td id="college3-fee">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Last Year Cutoff</strong></td>
+                                <td id="college1-cutoff">-</td>
+                                <td id="college2-cutoff">-</td>
+                                <td id="college3-cutoff">-</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Placements</strong></td>
+                                <td id="college1-placements">-</td>
+                                <td id="college2-placements">-</td>
+                                <td id="college3-placements">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tours -->
+    <section class="virtual-tours">
+        <div class="container">
+            <div class="section-header">
+                <h2>Virtual College Tours</h2>
+                <p>Explore campuses from the comfort of your home</p>
+            </div>
+            <div class="tours-grid">
+                <div class="tour-card">
+                    <div class="tour-thumbnail">🎥</div>
+                    <h4>Bangalore Medical College Campus Tour</h4>
+                    <p>Explore the historic campus, lecture halls, and state-of-the-art hospital facilities</p>
+                    <button class="btn btn-sm btn-primary">Watch Virtual Tour</button>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-thumbnail">🎥</div>
+                    <h4>COEP Engineering Campus</h4>
+                    <p>Tour through modern labs, workshops, and student facilities at COEP Pune</p>
+                    <button class="btn btn-sm btn-primary">Watch Virtual Tour</button>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-thumbnail">🎥</div>
+                    <h4>KGMU Medical Campus & Hospitals</h4>
+                    <p>Visit the extensive medical campus and attached super-specialty hospitals</p>
+                    <button class="btn btn-sm btn-primary">Watch Virtual Tour</button>
+                </div>
+                <div class="tour-card">
+                    <div class="tour-thumbnail">🎥</div>
+                    <h4>IIT Kanpur Campus Life</h4>
+                    <p>Experience student life, hostels, sports facilities, and academic buildings</p>
+                    <button class="btn btn-sm btn-primary">Watch Virtual Tour</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Need Help Choosing the Right College?</h2>
+            <p>Our expert counsellors can guide you through college selection based on your rank and preferences</p>
+            <a href="contact.html#appointment" class="btn btn-primary btn-large">Book Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>RBC Counselling</h3>
+                    <p>Your trusted partner for medical and engineering college admissions. We guide you to success.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="colleges.html">Colleges</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#neet">NEET Counselling</a></li>
+                        <li><a href="services.html#jee">JEE Counselling</a></li>
+                        <li><a href="services.html#state">State Quota</a></li>
+                        <li><a href="services.html#management">Management Quota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>📞 +91 98765 43210</li>
+                        <li>📧 info@rbccounselling.com</li>
+                        <li>📍 Bangalore, Karnataka</li>
+                        <li>🕐 Mon-Sat: 9:00 AM - 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RBC Counselling Consultancy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- College Details Modal -->
+    <div id="college-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/colleges.js"></script>
+</body>
+</html>

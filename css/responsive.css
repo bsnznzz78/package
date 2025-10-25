@@ -1,0 +1,513 @@
+/* ===========================
+   Responsive Design
+   Mobile-first approach
+   =========================== */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+
+    .service-content {
+        grid-template-columns: 1fr;
+    }
+
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tours-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .locations-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto 60px;
+    }
+
+    .appointment-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: Below 768px */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
+    }
+
+    /* Navigation */
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--bg-white);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 20px;
+        gap: 0;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 15px 10px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+    }
+
+    .trust-indicators {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .indicator .number {
+        font-size: 2rem;
+    }
+
+    .indicator .label {
+        font-size: 0.85rem;
+    }
+
+    /* Urgency Banner */
+    .urgency-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .urgency-content p {
+        font-size: 1rem;
+    }
+
+    #countdown-timer {
+        font-size: 1.1rem;
+    }
+
+    /* Grids */
+    .benefits-grid,
+    .services-grid,
+    .team-grid,
+    .metrics-grid,
+    .values-grid,
+    .mv-grid,
+    .featured-grid,
+    .tours-grid,
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card,
+    .service-card,
+    .team-member,
+    .metric-card {
+        padding: 25px;
+    }
+
+    /* Testimonials */
+    .testimonials-carousel {
+        padding: 0 50px;
+    }
+
+    .testimonial-card {
+        padding: 30px;
+    }
+
+    .testimonial-text {
+        font-size: 1.05rem;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Page Header */
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        font-size: 1.1rem;
+    }
+
+    /* About Page */
+    .milestone-card {
+        padding: 20px;
+    }
+
+    .milestone-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .mv-card {
+        padding: 30px;
+    }
+
+    .mv-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .accreditation-list {
+        grid-template-columns: 1fr;
+    }
+
+    .accreditation-item {
+        padding: 20px;
+    }
+
+    /* Services Page */
+    .service-detail-card {
+        padding: 30px 20px;
+    }
+
+    .service-header {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .service-icon-large {
+        font-size: 3.5rem;
+    }
+
+    .service-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .process-step {
+        gap: 20px;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .process-step:not(:last-child)::after {
+        left: 25px;
+        top: 60px;
+    }
+
+    .step-content h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Colleges Page */
+    .filter-controls {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .college-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .state-section {
+        padding: 30px 20px;
+    }
+
+    .state-title {
+        font-size: 1.6rem;
+    }
+
+    .college-list-item {
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .comparison-selectors {
+        grid-template-columns: 1fr;
+    }
+
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px;
+    }
+
+    /* Contact Page */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .faq-categories {
+        gap: 10px;
+    }
+
+    .faq-category {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .faq-question {
+        padding: 20px;
+        font-size: 1.05rem;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 20px;
+        font-size: 1rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        padding: 50px 0;
+    }
+
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Modal */
+    .modal-content {
+        padding: 30px 20px;
+        margin: 20px;
+    }
+
+    /* Buttons */
+    .btn-large {
+        padding: 16px 32px;
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile: Below 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .trust-indicators {
+        grid-template-columns: 1fr;
+    }
+
+    .urgency-content h3 {
+        font-size: 1.1rem;
+    }
+
+    #countdown-timer {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .testimonials-carousel {
+        padding: 0 40px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .story-visual {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .state-title {
+        font-size: 1.4rem;
+    }
+
+    .college-featured-card,
+    .college-list-item {
+        padding: 20px;
+    }
+
+    .map-placeholder {
+        padding: 40px 20px;
+    }
+
+    .map-icon {
+        font-size: 3.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.7rem;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding: 30px 0;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .trust-indicators {
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 20px;
+    }
+
+    .indicator .number {
+        font-size: 1.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .mobile-menu-toggle,
+    .urgency-banner,
+    .cta-section,
+    .footer,
+    .btn,
+    .carousel-btn {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+
+    h1, h2, h3 {
+        page-break-after: avoid;
+    }
+}
