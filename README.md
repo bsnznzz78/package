@@ -52,10 +52,19 @@ RBC Counselling Consultancy provides expert guidance for NEET, JEE, and state-le
 
 ## Technical Stack
 
+### Frontend
 - **HTML5**: Semantic markup for accessibility
 - **CSS3**: Modern styling with custom properties, Grid, and Flexbox
 - **Vanilla JavaScript**: No framework dependencies for lightweight performance
 - **Mobile-First Design**: Fully responsive across all devices
+
+### Backend
+- **Runtime:** Node.js with Express.js
+- **Database:** SQLite3 with better-sqlite3
+- **Authentication:** JWT (JSON Web Tokens)
+- **Security:** bcrypt, Helmet, CORS, Rate Limiting
+- **Email:** Nodemailer
+- **SMS:** Twilio (optional)
 
 ## File Structure
 
@@ -73,6 +82,12 @@ RBC Counselling Consultancy provides expert guidance for NEET, JEE, and state-le
 │   ├── main.js           # Core JavaScript functionality
 │   ├── colleges.js       # Colleges page specific features
 │   └── contact.js        # Contact forms and validation
+├── backend/              # Backend API server
+│   ├── src/             # Backend source code
+│   ├── database/        # SQLite database
+│   ├── package.json     # Node.js dependencies
+│   ├── README.md        # Backend documentation
+│   └── API_DOCUMENTATION.md  # API docs
 ├── .gitignore            # Git ignore rules
 └── README.md             # This file
 ```
@@ -138,16 +153,16 @@ RBC Counselling Consultancy provides expert guidance for NEET, JEE, and state-le
 ## Future Enhancements
 
 Potential additions for future versions:
-- Backend integration for form submissions
-- Database for college information
-- User authentication for student portal
-- Blog section for counselling tips
-- Live chat support
-- Payment gateway integration
-- Email notification system
-- Analytics integration
+- Student portal with personalized dashboards
+- Centralized database for comprehensive college information
+- Blog section for counselling tips and success stories
+- Live chat support and chatbot guidance
+- Payment gateway integration for premium services
+- Advanced analytics and reporting for admin teams
 
 ## Getting Started
+
+### Frontend Only
 
 1. Clone or download the repository
 2. Open `index.html` in a web browser
@@ -161,6 +176,49 @@ python -m http.server 8000
 # Or use any local server of your choice
 # Then visit: http://localhost:8000
 ```
+
+### With Backend (Full Stack)
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd rbc-counselling
+   ```
+
+2. **Setup Backend**
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env
+   # Edit .env with your configuration
+   npm run migrate
+   npm run dev
+   ```
+   Backend runs on `http://localhost:5000`
+
+3. **Setup Frontend**
+   ```bash
+   # In a new terminal, from project root
+   python -m http.server 8000
+   ```
+   Frontend runs on `http://localhost:8000`
+
+4. **Create First Admin User**
+   ```bash
+   curl -X POST http://localhost:5000/api/auth/register \
+     -H "Content-Type: application/json" \
+     -d '{
+       "full_name": "Admin User",
+       "phone": "+919876543210",
+       "email": "admin@example.com",
+       "password": "SecurePass123!",
+       "role": "super_admin"
+     }'
+   ```
+
+For detailed backend setup and API documentation, see:
+- [Backend README](backend/README.md)
+- [API Documentation](backend/API_DOCUMENTATION.md)
 
 ## Customization
 

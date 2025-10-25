@@ -36,6 +36,13 @@ build/
 .env
 .env.local
 .env.*.local
+backend/.env
+
+# Backend build artifacts
+backend/node_modules/
+backend/database/*.db
+backend/database/*.sqlite*
+backend/logs/
 
 # Microsoft Office temporary files
 ~$*.docx
