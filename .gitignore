@@ -41,3 +41,23 @@ build/
 ~$*.docx
 ~$*.xlsx
 ~$*.pptx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Application specific
+app/backend/uploads/
+app/backend/outputs/
+*.pptx
+!sample*.pptx
